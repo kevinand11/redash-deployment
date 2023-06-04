@@ -1,24 +1,24 @@
-import React, { useMemo } from "react";
-import { first, includes } from "lodash";
-import Menu from "antd/lib/menu";
-import Link from "@/components/Link";
-import PlainButton from "@/components/PlainButton";
-import HelpTrigger from "@/components/HelpTrigger";
-import CreateDashboardDialog from "@/components/dashboards/CreateDashboardDialog";
-import { useCurrentRoute } from "@/components/ApplicationArea/Router";
-import { Auth, currentUser } from "@/services/auth";
-import settingsMenu from "@/services/settingsMenu";
-import logoUrl from "@/assets/images/redash_icon_small.png";
+import logoUrl from "@/assets/images/redash_icon_small.png"
+import { useCurrentRoute } from "@/components/ApplicationArea/Router"
+import HelpTrigger from "@/components/HelpTrigger"
+import Link from "@/components/Link"
+import PlainButton from "@/components/PlainButton"
+import CreateDashboardDialog from "@/components/dashboards/CreateDashboardDialog"
+import { Auth, currentUser } from "@/services/auth"
+import settingsMenu from "@/services/settingsMenu"
+import Menu from "antd/lib/menu"
+import { first, includes } from "lodash"
+import React, { useMemo } from "react"
 
-import DesktopOutlinedIcon from "@ant-design/icons/DesktopOutlined";
-import CodeOutlinedIcon from "@ant-design/icons/CodeOutlined";
-import AlertOutlinedIcon from "@ant-design/icons/AlertOutlined";
-import PlusOutlinedIcon from "@ant-design/icons/PlusOutlined";
-import QuestionCircleOutlinedIcon from "@ant-design/icons/QuestionCircleOutlined";
-import SettingOutlinedIcon from "@ant-design/icons/SettingOutlined";
-import VersionInfo from "./VersionInfo";
+import AlertOutlinedIcon from "@ant-design/icons/AlertOutlined"
+import CodeOutlinedIcon from "@ant-design/icons/CodeOutlined"
+import DesktopOutlinedIcon from "@ant-design/icons/DesktopOutlined"
+import PlusOutlinedIcon from "@ant-design/icons/PlusOutlined"
+import QuestionCircleOutlinedIcon from "@ant-design/icons/QuestionCircleOutlined"
+import SettingOutlinedIcon from "@ant-design/icons/SettingOutlined"
+import VersionInfo from "./VersionInfo"
 
-import "./DesktopNavbar.less";
+import "./DesktopNavbar.less"
 
 function NavbarSection({ children, ...props }) {
   return (
@@ -78,6 +78,7 @@ export default function DesktopNavbar() {
           <Link href="./">
             <img src={logoUrl} alt="Redash" />
           </Link>
+          <p style={{ margin: '1rem' }}>Codygo</p>
         </div>
       </NavbarSection>
 
