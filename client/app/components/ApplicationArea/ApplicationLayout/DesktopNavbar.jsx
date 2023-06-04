@@ -78,7 +78,7 @@ export default function DesktopNavbar() {
           <Link href="./">
             <img src={logoUrl} alt="Redash" />
           </Link>
-          <p style={{ margin: '1rem' }}>Codygo</p>
+          <p style={{ margin: '1rem', fontWeight: 700 }}>Codygo</p>
         </div>
       </NavbarSection>
 
